@@ -15,6 +15,11 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    hamlib/rig.h \
+    hamlib/rig_dll.h \
+    hamlib/riglist.h
 
 FORMS    += mainwindow.ui
+
+LIBS += c:/ZOWN/CP-590/hamlib/libhamlib-2.lib
